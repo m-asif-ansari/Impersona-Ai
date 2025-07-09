@@ -28,10 +28,9 @@ st.set_page_config(
 st.logo(
     "https://mintlify.s3.us-west-1.amazonaws.com/agentai/logo/light.png", size="large"
 )
-# st.logo(r"assets\static\applogo.png", size="large")
 
 # Page Title and Subtitle
-st.title("AI Chat-Bot")
+st.title("Impersona-AI")
 st.subheader("Select the AI Chatbot Persona and Ask your questions")
 
 healthcheck_response = requests.get("http://127.0.0.1:8000/health")
@@ -46,7 +45,7 @@ if healthcheck_response.status_code != 200:
 # Sidebar customization
 st.sidebar.title("AI Chat-Bot")
 st.sidebar.write(
-    "This is a Personified AI ChatBot that can talk to you based on the persona you choose"
+    "This is a Personified AI ChatBot that can talk to you based on the persona you choose."
 )
 
 
