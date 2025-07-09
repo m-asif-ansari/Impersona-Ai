@@ -14,7 +14,7 @@ logger = init_logger(__name__)
 
 # Customizing the Streamlit Page
 st.set_page_config(
-    page_title="ChatBot",
+    page_title="Impersona-AI",
     initial_sidebar_state="expanded",
     layout="wide",
     menu_items={
