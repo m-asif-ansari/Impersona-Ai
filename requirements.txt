@@ -5,7 +5,7 @@ alembic==1.16.1
 altair==5.5.0
 annotated-types==0.7.0
 anyio==4.9.0
-attrs==18.2.0
+attrs
 beautifulsoup4==4.13.4
 bidict==0.23.1
 blinker==1.9.0
