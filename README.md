@@ -6,8 +6,10 @@ Impersona AI ChatBot is a GenAI-powered chatbot that can switch between differen
 
 The Impersona-AI Chatbot is a Python-Streamlit web-based application that leverages AI to answer user queries in natural language.
 
-The SQL AI Agent is built using the following technologies and modules:
+The Impersona-AI Chatbot is built using the following technologies and modules:
 - **Python** - Used as the primary programming language for the application.
+
+- **FastAPI** - Serves as the backend API framework, handling requests and managing communication between the frontend and language models.
 
 - **Streamlit** - Used to create the web-based user interface and handle front-end interactions.
 
