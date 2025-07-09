@@ -16,6 +16,7 @@ logger = init_logger(__name__)
 st.set_page_config(
     page_title="ChatBot",
     initial_sidebar_state="expanded",
+    layout="wide",
     menu_items={
         "Get Help": "https://github.com/m-asif-ansari/",
         "About": "# This is a ChatBot. Made by- Asif Ansari",
@@ -63,14 +64,14 @@ persona_list = [
     "travel-guide",
     "fitness-coach",
 ]
-selected_persona = st.sidebar.selectbox("Select a persona", persona_list, on_change=lambda: st.toast(f"Persona changed to {selected_persona}"))
+selected_persona = st.sidebar.selectbox("Select a persona", persona_list, on_change=lambda: st.toast(f"Persona changed"))
 
 # Initialize the selected LLM
 st.sidebar.divider()
 model_list = requests.get(
     "http://127.0.0.1:8000/llm_list").json().get("llm_list")
-st.sidebar.write("Select the Base LLM to be used as the SQL Agent")
-model_name = st.sidebar.selectbox("Select a model", model_list, on_change=lambda: st.toast(f"Model changed to {model_name}"))
+st.sidebar.write("Select the Base LLM to be used as the Chat-Bot's brain")
+model_name = st.sidebar.selectbox("Select a model", model_list, on_change=lambda: st.toast(f"Model changed"))
 llm = init_llm(model_name)
 
 
