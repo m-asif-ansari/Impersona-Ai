@@ -4,5 +4,4 @@ langchain[groq]
 langchain-community 
 langgraph
 streamlit
-pandas
-sqlalchemy
+fastapi
