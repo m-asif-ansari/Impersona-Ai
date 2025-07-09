@@ -126,10 +126,7 @@ if prompt := st.chat_input("Enter your query here!"):
             try:
                 # Get the response from the LLM
                 response = get_llm_response(llm, selected_persona, prompt)
-                # response = requests.post(
-                #     "http://127.0.0.1:8000/llm_response/",
-                #     json={"model_name": model_name, "persona": selected_persona, "prompt": prompt}
-                # ).json().get("llm_response")
+
             except Exception as e:
                 response = (
                     f"Facing issues with LLM. Try using a different Base LLM. Error: {e}"
